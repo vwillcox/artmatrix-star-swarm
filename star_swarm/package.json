@@ -1,0 +1,23 @@
+{
+  "name": "Star Swarm",
+  "version": "1.0.0",
+  "hash": "4b87faaa8e3f",
+  "description": "A space shoot-em-up that plays itself, with a pilot from beginner to expert",
+  "author": "Vincent Willcox",
+  "category": "Scenes",
+  "requires_internet": false,
+  "urls": [
+    [
+      "plugins/star_swarm/__init__.py",
+      "__init__.py"
+    ],
+    [
+      "plugins/star_swarm/config.html",
+      "config.html"
+    ],
+    [
+      "plugins/star_swarm/thumbnail.png",
+      "thumbnail.png"
+    ]
+  ]
+}

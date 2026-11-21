@@ -1,0 +1,28 @@
+<form method="post" action="/config?plugin={{ plugin }}" data-autosave>
+  <fieldset>
+    <legend>Pilot</legend>
+    <div class="presets">
+      <label><input type="radio" name="skill" value="beginner" {{ "checked" if placeholder.skill == "beginner" else "" }}>Beginner</label>
+      <label><input type="radio" name="skill" value="average" {{ "checked" if placeholder.skill == "average" else "" }}>Average</label>
+      <label><input type="radio" name="skill" value="skilled" {{ "checked" if placeholder.skill == "skilled" else "" }}>Skilled</label>
+      <label><input type="radio" name="skill" value="expert" {{ "checked" if placeholder.skill == "expert" else "" }}>Expert</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Speed</legend>
+    <div class="presets">
+      <label><input type="radio" name="speed" value="slow" {{ "checked" if placeholder.speed == "slow" else "" }}>Slow</label>
+      <label><input type="radio" name="speed" value="normal" {{ "checked" if placeholder.speed == "normal" else "" }}>Normal</label>
+      <label><input type="radio" name="speed" value="fast" {{ "checked" if placeholder.speed == "fast" else "" }}>Fast</label>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Score, wave and ships left</legend>
+    <div class="presets">
+      <label><input type="radio" name="score" value="on" {{ "checked" if placeholder.score_shown == "on" else "" }}>Shown</label>
+      <label><input type="radio" name="score" value="off" {{ "checked" if placeholder.score_shown == "off" else "" }}>Hidden</label>
+    </div>
+  </fieldset>
+</form>
